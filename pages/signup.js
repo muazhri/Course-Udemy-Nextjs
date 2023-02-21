@@ -19,11 +19,7 @@ function Signup() {
   });
 
   const { name, email, password, bio } = user;
-  // const handleChange = (e) => {
-  //   const {name, value}= e.target
-  //   setUser(prev => ({...prev, [name]:value}));
-
-  // };
+  const handleChange = () => {};
 
   const [showSocialLinks, setShowSocialLink] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -83,7 +79,7 @@ function Signup() {
               name:"eye",
               circular:true,
               link:true,
-              onclick:() => setShowPassword(!showPassword )
+              onclick:() => setShowPassword(!showPassword)
             }}
             iconPosition="left"
             type={showPassword ? "text" : "password"}
